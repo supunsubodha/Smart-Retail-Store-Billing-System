@@ -21,9 +21,12 @@ public abstract class Product {
     float calculatePrice() {
         return price;
     }
+    public String getProductName(){
+        return productName;
+    }
 
     float calculatePrice(float discount) {
-        return price-((price/100) * discount);
+        return price-discount;
     }
 
 
